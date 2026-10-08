@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de Indicadores Web</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Painel de Indicadores Web</h1>
+        <p>Comparação de dados utilizando Canvas e SVG</p>
+    </header>
+
+    <main>
+
+        <section class="grafico">
+
+            <h2>Gráfico com Canvas</h2>
+
+            <canvas id="graficoCanvas" width="600" height="400"></canvas>
+
+            <div class="descricao">
+                <h3>Descrição dos dados</h3>
+
+                <p>
+                    O gráfico apresenta quatro categorias relacionadas ao
+                    desenvolvimento web. Os valores representam indicadores
+                    fictícios entre 0 e 100.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="grafico">
+
+            <h2>Gráfico com SVG</h2>
+
+            <svg id="graficoSVG"
+                 viewBox="0 0 600 400">
+
+                <!-- Eixos -->
+
+                <line x1="60"
+                      y1="30"
+                      x2="60"
+                      y2="340">
+                </line>
+
+                <line x1="60"
+                      y1="340"
+                      x2="570"
+                      y2="340">
+                </line>
+
+
+                <!-- BARRAS -->
+
+                <rect x="100"
+                      y="145"
+                      width="70"
+                      height="195">
+                </rect>
+
+                <rect x="220"
+                      y="100"
+                      width="70"
+                      height="240">
+                </rect>
+
+                <rect x="340"
+                      y="190"
+                      width="70"
+                      height="150">
+                </rect>
+
+                <rect x="460"
+                      y="70"
+                      width="70"
+                      height="270">
+                </rect>
+
+
+                <!-- VALORES -->
+
+                <text x="135" y="130">65</text>
+
+                <text x="255" y="85">80</text>
+
+                <text x="375" y="175">50</text>
+
+                <text x="495" y="55">90</text>
+
+
+                <!-- CATEGORIAS -->
+
+                <text x="135" y="370">HTML</text>
+
+                <text x="255" y="370">CSS</text>
+
+                <text x="375" y="370">JavaScript</text>
+
+                <text x="495" y="370">SVG</text>
+
+            </svg>
+
+
+            <div class="descricao">
+
+                <h3>Descrição dos dados</h3>
+
+                <p>
+                    O gráfico SVG apresenta os mesmos dados do gráfico
+                    Canvas, permitindo comparar visualmente as duas
+                    tecnologias utilizadas para criação de gráficos na Web.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Mini-projeto integrador — HTML5, Canvas e SVG
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
